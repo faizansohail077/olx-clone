@@ -1,0 +1,5 @@
+.banner > img{
+    height: 250px;
+    position: relative;    
+    left: -500px;
+}

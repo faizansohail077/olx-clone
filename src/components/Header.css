@@ -1,0 +1,89 @@
+.header {
+	display: flex;
+	align-items: center;
+    background-color: #f7f8f9;
+    width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.header__left {
+	display: flex;
+	align-self: center;
+	height: 40px;
+	border: 2px solid black;
+	margin: 3px;
+	border-radius: 3px;
+}
+.header__left > input {
+	border: none;
+	background-color: #f7f8f9;
+	padding-left: 10px;
+	width: 100%;
+}
+
+.header__searchIcon {
+	align-items: center;
+	padding: 7px;
+	height: 22px !important;
+}
+
+.header__keydown {
+	padding: 6px;
+	height: 22px !important;
+	align-items: flex-end;
+}
+
+.header__right {
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	border: 2px solid black;
+	border-radius: 3px;
+	flex: 0.9;
+}
+.header__right > input {
+	width: 100%;
+	border: none;
+	background-color: #f7f8f9;
+}
+.header__rightSearch {
+	background-color: black;
+	color: white;
+	padding: 8px;
+}
+
+.header__button {
+	padding-left: 12px;
+}
+.header__button > Button {
+	font-size: 16px !important;
+	margin-right: 10px;
+	font-weight: bold !important;
+	border-bottom: black solid 1px;
+}
+
+.header__navigation {
+	border: 1px solid grey;
+	height: 20px;
+	background-color: #ffffff;
+	padding: 10px;
+	align-items: center;
+	flex: 0.3;
+	z-index: -10;
+}
+
+.header__navigation > nav {
+	display: flex;
+
+	justify-content: space-evenly;
+	width: 700px;
+}
+
+.header__logo {
+	height: 100px;
+	cursor: pointer;
+}
