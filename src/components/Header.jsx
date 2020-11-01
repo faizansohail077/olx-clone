@@ -21,7 +21,9 @@ function Header() {
     return (
         <div>
             <div className='header'>
-                <img className="header__logo" src={logo} alt="" />
+                <Link to='/'>
+                    <img className="header__logo" src={logo} alt="" />
+                </Link>
                 <div className="header__left">
                     <SearchIcon className="header__searchIcon" />
                     <input placeholder='enter country' />
@@ -38,15 +40,26 @@ function Header() {
 
             </div>
             <div className="header__navigation">
-                <nav>
+                <nav className="links">
+                   <Link to='/'>
                     <h5 >All catagories</h5>
-                    <Link to='/car'>
-                        <h5>car</h5>
+
                     </Link>
-                    <h5>Motercycles</h5>
-                    <h5>Houses</h5>
-                    <h5>Tv-Video-Audio</h5>
-                    <h5>Tablets</h5>
+                    <Link to='/Car'>
+                        <h5>Car</h5>
+                    </Link>
+                    <Link to='/Motercycles'>
+                        <h5>Motercycles</h5>
+                    </Link>
+                    <Link to='/House'>
+                        <h5>Houses</h5>
+                    </Link>
+                    <Link to="/Tv_product">
+                        <h5>Tv-Video-Audio</h5>
+                    </Link>
+                    {/* <Link to="/Tablets">
+                        <h5>Tablets</h5>
+                    </Link> */}
                 </nav>
             </div>
         </div>
